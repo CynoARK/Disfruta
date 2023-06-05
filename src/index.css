@@ -569,3 +569,31 @@ ul {
 		width: 100%;
 	  }
 	}
+
+	@media (min-width: 767px) {
+		.navbar-toggle {
+		  display: column;
+		  cursor: pointer;
+		}
+	  
+	
+		.navbar-links {
+		  display: flex;
+		  flex-direction: column;
+		  position: absolute;
+		  top: 100%;
+		  left: 0;
+		  width: 100%;
+		  background-color: #fff;
+		  padding: 10px;
+		}
+	  
+		.navbar-links a {
+		  display: block;
+		  padding: 5px;
+		}
+	  
+		#navbar-toggle:checked ~ .navbar-links {
+		  display: flex;
+		}
+	  }
