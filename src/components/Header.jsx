@@ -28,9 +28,10 @@ export const Carrito = ({
 
 	return (
 		<header>
-			<h1>Tienda</h1>
+			
 
 			<div className='container-icon'>
+			<h1>Tienda</h1>
 				<div
 					className='container-cart-icon'
 					onClick={() => setActive(!active)}

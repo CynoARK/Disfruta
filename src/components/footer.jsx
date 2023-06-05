@@ -1,6 +1,6 @@
 import React from 'react'
 import WhatsAppLink from './contactos'
-function Final_2() {
+function Footer() {
   return (
     <footer>
        <div className='main-footer'>
@@ -51,4 +51,4 @@ function Final_2() {
   )
 }
 
-export default Final_2 ;
+export default Footer ;
