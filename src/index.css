@@ -225,60 +225,12 @@ h1 {
   transform: scale(1.03);
   border-radius: 0;
 }
-/* responsive */
-@media (max-width: 767px) {
-	
-	header {
-		
-		display: flex;
-		align-items: center;
-	
-		
-	}
-
-	.icon-cart {
-		width: 50px;
-		height: 50px;
-	}
-
-	
-	
-	
-	.container-cart-products {
-		top: 40px;
-		right: 40px;
-		width: 400%;
-		
-	}
-
-	
-	.cart-product {
-		padding: 20px;
-	}
-
-	
-	.cart-total {
-		text-align: center;
-
-	}
-
-	
-	.container-items {
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-	}
-
-	
-	.btn-clear-all {
-		padding: 10px 0;
-		font-size: 14px;
-	}
-}
 /* footer */
 .main-footer{
-    color:rgb(0, 253, 63);
-    background-image:url(../../assets/Img/bgf.png);
+    color:#0da834;
     background-size: cover;
     width: 100%;
+	text-align: center;
 }
 .row1 img {
     width: 200px;
@@ -297,7 +249,11 @@ h1 {
   justify-content: space-between;
   text-align: justify;
   font-weight: bold;
+  
 }
+ul {
+	list-style: none;
+  }
 .row1 {
 	display: flex;
 }
@@ -372,7 +328,8 @@ h1 {
   
   .login_form button {
 	width: 105%;
-	background-color: #4CAF50;
+	height: 30px;
+	background-color: #0da834;
 	color: white;
 	border: none;
 	cursor: pointer;
@@ -380,5 +337,87 @@ h1 {
   }
   
   .login_form button:hover {
-	background-color: #45a049;
+	background-color: #000000;
+	color: #fff;
+	text-decoration: line-through;
   }
+  
+/* responsive */
+@media (max-width: 767px) {
+	
+	header {
+		
+		display: flex;
+		align-items: center;
+	
+		
+	}
+
+/* producto */
+	.icon-cart {
+		width: 50px;
+		height: 50px;
+	}
+	.container-cart-products {
+		top: 40px;
+		right: 40px;
+		width: 400%;
+		
+	}
+
+	.cart-product {
+		padding: 20px;
+	}
+
+	
+	.cart-total {
+		text-align: center;
+
+	}
+
+	
+	.container-items {
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	}
+	
+	.btn-clear-all {
+		padding: 10px 0;
+		font-size: 14px;
+	}
+
+
+	/* footer */
+	.row1 {
+		flex-direction: column;
+		text-align:  start;
+	  }
+	
+	  .col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	  }
+	
+	  .col h2 {
+		margin-top: 20px;
+		margin-bottom: 10px;
+		
+	  }
+	
+	  .col ul li {
+		margin-top: 10px;
+		text-align: start;
+	  }
+	  /* logi */
+	  .login_container {
+		height: auto;
+		padding: 20px;
+	  }
+	
+	  .login_form {
+		width: 100%;
+	  }
+	
+	  .login_form button {
+		width: 100%;
+	  }
+	}
